@@ -13,12 +13,13 @@ function logWhisper(string){
   return
 }
 function sayHiToGrandma(string){
-  switch(string){
-    case (string == string.toUpperCase()):
-      return "YES INDEED!"
-    case (string == string.toLowerCase()):
-      return "I can't hear you!"
-    default:
-      return "I love you, too."
+  if (string === string.toUpperCase()){
+    return "YES, INDEED!"
+  }
+  else if (string === string.toLowerCase()) {
+    return "I can't hear you!"
+    }
+  else {
+    return "I love you, too."
   }
 }
